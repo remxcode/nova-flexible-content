@@ -285,6 +285,13 @@ export default {
                  }
             });
         },
+
+        
+        onSyncedField() {
+            this.orderedGroups.forEach(group => {
+                this.remove(group.key);
+            });
+        },
     }
 }
 </script>
